@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1400">
+    <title>Todo</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="stylesheet" as="style" crossorigin
+        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/variable/pretendardvariable.css" />
+    <!-- font -->
+    <link rel="stylesheet" href="css/goods.css">
+    <script src="js/jquery-3.6.4.min.js"></script>
+</head>
+
+<body>
+    <div id="fixed_group"> <!-- fixed : s -->
+        <div id="btn_do">
+            <a href="do.html"></a>
+        </div>
+        <div id="btn_top">
+            <img src="images/btn_topscroll.svg" alt="btn_topscroll" width="50px" height="50px">
+        </div>
+    </div> <!-- fixed : e -->
+
+    <div id="header_visual"> <!-- header + visual : s -->
+        <div id="header_wrap"> <!-- header : s -->
+            <div id="header">
+                <div class="header_logo">
+                    <a href="index.html">
+                        <img src="images/logo_blue.svg" alt="todo_logo" width="100px" height="35px">
+                    </a>
+                </div>
+                <div class="header_gnb">
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="article.html">Article</a></li>
+                        <li><a href="goods.html">Goods</a></li>
+                        <li><a href="community.html">Community</a></li>
+                        <li><a href="do.html">Do</a></li>
+                    </ul>
+                </div>
+                <div class="header_util_wrap">
+                    <div class="header_util">
+                        <ul>
+                            <li><a href="javascript:return false;">로그인</a></li>
+                            <li><a href="javascript:return false;">회원가입</a></li>
+                            <li><a href="javascript:return false;">마이페이지</a></li>
+                        </ul>
+                    </div>
+                    <div class="btn_search search_popup_open">
+                        <a href="javascript:return false;"><img src="images/btn_search.svg" alt="btn_search"></a>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- header : e -->
+        <div id="search_popup"> <!-- search_popup : s -->
+            <div class="search_bar_wrap">
+                <div class="search_bar">
+                    <a href="javascript:return false;" class="search_popup_logo">
+                        <img src="images/logo_black.svg" alt="todo_logo" width="150px" height="50px">
+                    </a>
+                    <form action="">
+                        <input type="search" placeholder="추천검색어를 검색해보세요">
+                        <a href="javascript:return false;" class="btn_search_sub"><img src="images/btn_search_sub.svg" alt="search_sub"
+                                width="25px" height="29px"></a>
+                    </form>
+                    <a href="javascript:return false;" class="btn_delete search_popup_close"><img src="images/btn_x.svg" alt="btn_x"></a>
+                </div>
+            </div>
+            <div class="default_wrap">
+                <div class="recent_wrap">
+                    <p class="search_popup_title">최근검색어</p>
+                    <a class="btn_all_delete">전체삭제</a>
+                    <p class="gray">최근검색어가 없습니다.</p>
+                </div>
+                <div class="recommend_wrap">
+                    <p class="search_popup_title">추천검색어</p>
+                    <ul>
+                        <li><a href="javascript:return false;">#미세플라스틱</a></li>
+                        <li><a href="javascript:return false;">#재활용</a></li>
+                        <li><a href="javascript:return false;">#해양</a></li>
+                        <li><a href="javascript:return false;">#바다거북</a></li>
+                        <li><a href="javascript:return false;">#해양생태계</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div> <!-- search_popup : e -->
+        <div id="visual_wrap">
+            <div id="visual_title"> <!-- visual_title : s -->
+                <h1>GOODS</h1>
+                <h2>
+                    친환경적 소비습관이 <br>
+                    지구보호로 이어집니다.
+                </h2>
+                <p>
+                    투두제작상품을 만나보세요 <br>
+                    일정금액은 환경보호에 사용됩니다.
+                </p>
+            </div> <!-- visual_title : e -->
+            <img class="visual_wrap_ani text_ani" src="images/goods/no_plastic_2.svg"
+            alt="no_plastic" width="500px" height="500px">
+            <div id="visual_photo">
+                <div class="carousel">
+                    <ul class="carousel__list">
+                      <li class="carousel__item" data-pos="-2">1</li>
+                      <li class="carousel__item" data-pos="-1">2</li>
+                      <li class="carousel__item" data-pos="0">3</li>
+                      <li class="carousel__item" data-pos="1">4</li>
+                      <li class="carousel__item" data-pos="2">5</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div> <!-- header + visual : e -->
+    <div id="section1">
+        <p class="section_title"> Margazine</p>
+        <div class="margazine1_wrap">
+            <div class="margazine1_l">
+                <div class="img_wrap">
+                    <img src="images/goods/margazine_photo1.jpg" alt="margazine_photo1">
+                </div>
+                <div class="cover">
+                    <p class="cover_title">
+                        Margazine No.01 <br>
+                        Plastic Pollution <br>
+                        <a href="javascript:return false;">
+                            <span>전체보기</span>
+                            <img src="images/goods/view_all2.svg" width="10px" height="10px" alt="view_all">
+                        </a>
+                    </p>
+                </div>
+            </div>
+            <div class="margazine1_r">
+                <h3>
+                    이번달 매거진
+                </h3>
+                <h1>
+                    Plastic Pollution
+                </h1>
+                <hr>
+                <div class="margazine1_list">
+                    <p>
+                        <span>01</span> 지구를 망치는 버려진 플라스틱
+                    </p>
+                    <p>
+                        <span>02</span> 전세계 바다에 떠다니는 미세플라스틱 230만톤
+                    </p>                
+                    <p>
+                        <span>03</span> 미세플라스틱, 인간·지구 건강에 점점 더 큰 위협
+                    </p>
+                </div>
+
+                <hr>
+            </div>
+        </div>
+
+        <div class="margazine2_wrap">
+            <div class="margazine2_l">
+            </div>
+            <div class="margazine2_r">
+                <div class="img_wrap">
+                    <img src="images/goods/margazine_photo3.jpg" alt="margazine_photo1">
+                </div>
+                <div class="cover">
+                    <p class="cover_title">
+                        Margazine No.02 <br>
+                        Plenty more fish in the sea? <br>
+                        <a href="javascript:return false;">
+                            <span>전체보기</span>
+                            <img src="images/goods/view_all2.svg" width="10px" height="10px" alt="view_all">
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="section2">
+        <p class="section_title"> Eco item</p>
+        <div class="eco_item1_wrap">
+            <div class="eco_item1_l">
+                <div class="img_wrap">
+                    <img src="images/goods/eco_item_photo1.jpg" alt="eco_item_photo1">
+                </div>
+                <div class="cover">
+                    <p class="cover_text">
+                        리사이클링 <br>
+                        머그컵 <br>
+                        <a href="javascript:return false;">
+                            <span>전체보기</span>
+                            <img src="images/goods/view_all2.svg" width="10px" height="10px" alt="view_all">
+                        </a>
+                    </p>
+                </div>
+            </div>
+            <div class="eco_item1_r">
+                <div class="eco_item1_r_1">
+                    <div class="img_wrap">
+                        <img src="images/goods/eco_item_photo2.jpg" alt="eco_item_photo2">
+                    </div>
+                    <div class="cover">
+                        <p class="cover_text">
+                            바다거북<br>
+                            포스트엽서 <br>
+                            <a href="javascript:return false;">
+                                <span>전체보기</span>
+                                <img src="images/goods/view_all2.svg" width="10px" height="10px" alt="view_all">
+                            </a>
+                        </p>
+                    </div>
+                </div>
+                <div  class="eco_item1_r_2">
+                    <h1>Save The Sea</h1>
+                    <p>판매금액의 15%를 환경재단에 기부하여 <br>
+                        환경 문제 개선에 사용됩니다.</p>
+                </div>
+            </div>
+        </div>
+        <div class="eco_item2_wrap">
+            <div class="eco_item2_l">
+            </div>
+            <div class="eco_item2_r">
+                <div class="img_wrap">
+                    <img src="images/goods/eco_item_photo5.jpg" alt="eco_item_photo5">
+                </div>
+                <div class="cover">
+                    <p class="cover_text">
+                        2023년형<br>
+                        다이어리 <br>
+                        <a href="javascript:return false;">
+                            <span>전체보기</span>
+                            <img src="images/goods/view_all2.svg" width="10px" height="10px" alt="view_all">
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="eco_item3">
+            <h1>The <br>
+                Eco-Friendly
+            </h1>
+            <div class="eco_item3_text">
+                <span>지속 가능한 지구를 위한 가치소비</span><br>
+                저희 투두 브랜드는 <br>
+                환경에 해로운 원료, 제작 공정, 패키지 등을 <br>
+                최소화한 친환경 제품을 제공합니다.
+            </div>
+        </div>
+        <div class="eco_item4_wrap">
+            <div class="eco_item4_l">
+                <div class="img_wrap">
+                    <img src="images/goods/eco_item_photo7.jpg" alt="eco_item_photo7">
+                </div>
+                <div class="cover">
+                    <p class="cover_text">
+                        리사이클링 <br>
+                        클립보드 <br>
+                        <a href="javascript:return false;">
+                            <span>전체보기</span>
+                            <img src="images/goods/view_all2.svg" width="10px" height="10px" alt="view_all">
+                        </a>
+                </div>
+            </div>
+            <div class="eco_item4_r">
+                <div class="eco_item4_r_wrap">
+                    <div class="eco_item4_r_l">
+                        <div class="img_wrap">
+                            <img src="images/goods/eco_item_photo8.jpg" alt="eco_item_photo8">
+                        </div>
+                        <div class="cover">
+                            <p class="cover_text2">
+                                에어팟 프로2 <br>
+                                하드케이스 <br>
+                                <a href="javascript:return false;">
+                                    <span>전체보기</span>
+                                    <img src="images/goods/view_all2.svg" width="10px" height="10px" alt="view_all">
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                    <div  class="eco_item4_r_r">
+                        <div class="img_wrap">
+                            <img src="images/goods/eco_item_photo9.jpg" alt="eco_item_photo9">
+                        </div>
+                        <div class="cover">
+                            <p class="cover_text2">
+                                친환경소재 <br>
+                                미니 스트링백 <br>
+                                <a href="javascript:return false;">
+                                    <span>전체보기</span>
+                                    <img src="images/goods/view_all2.svg" width="10px" height="10px" alt="view_all">
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="eco_item4_r_3">
+                    <p>3만원 이상 결제시, 현대카드 M포인트 50% 사용 <br>
+                        <span>Hyundai Card 프로모션</span>
+                    </p>
+                </div>
+            </div>
+            
+        </div>
+        <div class="eco_item5_wrap">
+            <div class="eco_item5_l">
+                <div class="img_wrap">
+                    <img src="images/goods/eco_item_photo11.jpg" alt="eco_item_photo11">
+                </div>
+                <div class="cover">
+                    <p class="cover_text">
+                        [기획상품] <br>
+                        포스트엽서+봉투 <br>
+                        <a href="javascript:return false;">
+                            <span>전체보기</span>
+                            <img src="images/goods/view_all2.svg" width="10px" height="10px" alt="view_all">
+                        </a>
+                    </p>
+                </div>
+            </div>
+            <div class="eco_item5_r">
+                <div class="img_wrap">
+                    <img src="images/goods/eco_item_photo12.jpg" alt="eco_item_photo12">
+                </div>
+                <div class="cover">
+                    <p class="cover_text">
+                        2023년형 <br>
+                        탁상형 달력 <br>
+                        <a href="javascript:return false;">
+                            <span>전체보기</span>
+                            <img src="images/goods/view_all2.svg" width="10px" height="10px" alt="view_all">
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="goods_banner_wrap">
+        <div id="goods_banner">
+            <p class="goods_banner_title">지구를 위한 작은 실천,
+                <br><span>Eco Box</span>
+            </p>
+            <p class="goods_banner_text">Todo에서 구매한 제품은 <br>
+            친환경 소재로 제작된 박스에 담겨 배송됩니다.</p>
+        </div>
+    </div>
+
+    <!-- footer : s -->
+    <div id="footer_wrap">
+        <div id="footer">
+            <div class="footer_logo">
+                <a href="index.html">
+                    <img src="images/logo_black.svg" alt="todo_logo" width="120px" height="55px">
+                </a>
+            </div>
+            <div class="footer_gnb">
+                <ul>
+                    <li><a href="javascript:return false;">개인정보처리방침</a></li>
+                    <li><a href="javascript:return false;">이용약관</a></li>
+                    <li><a href="javascript:return false;">운영정책</a></li>
+                    <li><a href="javascript:return false;">분쟁해결기준</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul class="footer_inf">
+                    <li>(주)투두대표이사: 박선혜 </li>
+                    <li>주소: 부산 해운대구 달맞이길 139 (중동)</li>
+                    <li>이메일: TODO@kakaoenterprise.com</li>
+                    <li>연락처: 1234-5678</li>
+                    <li>
+                        사업자등록번호123-45-03431
+                        <a href="javascript:return false;" class="footer_inf_a">(사업자정보 확인)</a>
+                    </li>
+                    <li>통신판매번호2020-부산해운B-0444 ©Todo Enterprise Corp.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- script -->
+    <script src="js/jquery-latest.min.js"></script>
+    <script src="js/goods.js"></script>
+</body>
+
+</html>
