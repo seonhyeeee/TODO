@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1400">
+    <title>Todo</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="stylesheet" as="style" crossorigin
+        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/variable/pretendardvariable.css" />  <!-- font -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"> <!-- plastic_reduction_company -->
+    <link rel="stylesheet" href="css/do.css">
+    <script src="js/jquery-3.6.4.min.js"></script>
+</head>
+
+<body>
+    <!-- fixed : s -->
+    <div id="fixed_group">
+        <div id="btn_do">
+            <a href="do.html"></a>
+        </div>
+        <div id="btn_top">
+            <img src="images/btn_topscroll.svg" alt="btn_topscroll" width="50px" height="50px">
+        </div>
+    </div> 
+    <!-- fixed : e -->
+
+    <!-- header + visual : s -->
+    <div id="header_visual"> 
+        <div id="header_wrap"> <!-- header : s -->
+            <div id="header">
+                <div class="header_logo">
+                    <a href="index.html">
+                        <img src="images/logo_blue.svg" alt="todo_logo" width="100px" height="35px">
+                    </a>
+                </div>
+                <div class="header_gnb">
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="article.html">Article</a></li>
+                        <li><a href="goods.html">Goods</a></li>
+                        <li><a href="community.html">Community</a></li>
+                        <li><a href="do.html">Do</a></li>
+                    </ul>
+                </div>
+                <div class="header_util_wrap">
+                    <div class="header_util">
+                        <ul>
+                            <li><a href="javascript:return false;">로그인</a></li>
+                            <li><a href="javascript:return false;">회원가입</a></li>
+                            <li><a href="javascript:return false;">마이페이지</a></li>
+                        </ul>
+                    </div>
+                    <div class="btn_search search_popup_open">
+                        <a href="javascript:return false;"><img src="images/btn_search.svg" alt="btn_search"></a>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- header : e -->
+        <div id="search_popup"> <!-- search_popup : s -->
+            <div class="search_bar_wrap">
+                <div class="search_bar">
+                    <a href="javascript:return false;" class="search_popup_logo">
+                        <img src="images/logo_black.svg" alt="todo_logo" width="150px" height="50px">
+                    </a>
+                    <form action="">
+                        <input type="search" placeholder="추천검색어를 검색해보세요">
+                        <a href="javascript:return false;" class="btn_search_sub"><img src="images/btn_search_sub.svg"
+                                alt="search_sub" width="25px" height="29px"></a>
+                    </form>
+                    <a href="javascript:return false;" class="btn_delete search_popup_close"><img src="images/btn_x.svg"
+                            alt="btn_x"></a>
+                </div>
+            </div>
+            <div class="default_wrap">
+                <div class="recent_wrap">
+                    <p class="search_popup_title">최근검색어</p>
+                    <a class="btn_all_delete">전체삭제</a>
+                    <p class="gray">최근검색어가 없습니다.</p>
+                </div>
+                <div class="recommend_wrap">
+                    <p class="search_popup_title">추천검색어</p>
+                    <ul>
+                        <li><a href="javascript:return false;">#미세플라스틱</a></li>
+                        <li><a href="javascript:return false;">#재활용</a></li>
+                        <li><a href="javascript:return false;">#해양</a></li>
+                        <li><a href="javascript:return false;">#바다거북</a></li>
+                        <li><a href="javascript:return false;">#해양생태계</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div> <!-- search_popup : e -->
+        <div id="visual_wrap">
+            <div class="visual_l"> <!-- visual_title : s -->
+                <P>지금 바로,</P>
+                <p>여러분이</p>
+                <P>할 수 있는 행동</P>
+            </div> <!-- visual_title : e -->
+            <div class="visual_r">
+                DO
+            </div>
+        </div>
+    </div>
+    <!-- header + visual : e -->
+
+    <!-- section1 : s -->
+    <div id="section1">
+        <div class="scroll_down">
+            <div class="scroll_down_ani"></div>
+            <p>scroll down</p>
+        </div>
+        <h1>
+            What do i need to <span>DO?</span></h1>
+    </div>
+    <!-- section1 : e -->
+
+    <!-- section2 : s -->
+    <div id="section2">
+        <div class="section_title">
+            <img src="images/do/check.png" alt="check">
+            첫째, 제로웨이스트 실천하기 <br>
+        </div>
+        <p class="section_subtitle">
+            일회용품 사용을 줄이고 일상 생활용품을 재활용하여 <br>
+            쓰레기 배출을 치소화해 탄소중립을 실천하는 방법을 말해요 !
+        </p>
+        <div class="section2_1">
+            <div class="section2_photo1">
+                <img src="images/do/section2_photo1.jpg" alt="section2_photo1">
+            </div>
+            <div class="section2_prop">
+                <h1>
+                    ‘쓰레기 없애기’ <br>
+                    ‘생활 쓰레기 최소화하기’
+                </h1>
+            </div>
+        </div>
+        <div class="section2_2">
+            <div class="zerowaste_title">
+                제로웨이스트 5R원칙
+            </div>
+            <p class="zerowaste_subtitle">
+                실생활에서 간단히 실천할 수 있는 제로 웨이스트에는 뭐가 있을까요?
+            </p>
+            <!-- partial:index.partial.html 아코디언-->
+            <div id="wrap">
+                <div class="group">
+                    <div class="item item1">
+                        <h1>REJECT</h1>
+                        <p class="item_a">필요하지 않는 것은 거절한다.</p>
+                    </div>
+                    <div class="item item2">
+                        <h1>REDUCE</h1>
+                        <p class="item_a">필요하며 거절할 수 없는 것은 줄인다.</p>
+                    </div>
+                    <div class="item item3">
+                        <h1>REUSE</h1>
+                        <p class="item_a">소비하면서 거절하거나 줄일 수 없는 것은 재사용한다.</p>
+                    </div>
+                    <div class="item item4">
+                        <h1>RECYCLE</h1>
+                        <p class="item_a">거절하거나 줄이거나 재사용할 수 없는 것은 재활용한다.</p>
+                    </div>
+                    <div class="item item5">
+                        <h1>ROT</h1>
+                        <p class="item_a">마지막으로 썩히는 방법, 즉 퇴비화하는 것이다.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- section2 : e -->
+
+    <!-- section3 : s -->
+    <div id="section3">
+        <div class="section_title">
+            <img src="images/do/check.png" alt="check">
+            둘째, 플라스틱 소식에 관심가지기 <br>
+        </div>
+        <p class="section_subtitle">
+            투두는 소비자들이 지속적으로 환경에 관심을 지니기 위해 <br>
+            매주 플라스틱 소식을 전해드립니다.
+        </p>
+        <div id="section3_email">
+            <div class="section3_email_l">
+                <p class="sub_Title">지금 493435명이 투두를 읽고 있어요.</p>
+                <h1 class="Title">매주 새로운 플라스틱 소식, <span>메일로 받아보세요</span></h1>
+                <div class="text_bar">
+                    <form action="">
+                        <input type="text" placeholder="이메일주소" class="email_text"> <br>
+                    </form>
+                </div>
+                <div class="text_bar">
+                    <form action="">
+                        <input type="text" placeholder="아이디" class="id_text"> <br>
+                    </form>
+                </div>
+
+                <div class="checkbox_group check_top">
+                    <input type="checkbox" class="checkbox" size="22"> <span class="checkbox_text">개인정보 수집·이용에
+                        동의합니다.</span>
+                </div>
+                <div class="checkbox_group">
+                    <input type="checkbox" class="checkbox"> <span class="checkbox_text">광고성 정보 수신에 동의합니다.</span>
+                </div>
+                <a class="white_btn btn_email" href="javascript:return false;">받아보기</a>
+            </div>
+            <div class="section3_email_r">
+                <img src="images/do/email_img.svg" alt="email_img">
+            </div>
+        </div>
+    </div>
+    <!-- section3 : e -->
+
+    <!-- section4 : s -->
+    <div id="section4">
+        <div class="section_title">
+            <img src="images/do/check.png" alt="check">
+            셋째, 우리가 먼저 표현하기 <br>
+        </div>
+        <p class="section_subtitle">
+            누가, 무엇을, 어떻게 해야 쓰레기가 줄어들까요? <br>
+            제로 웨이스트(Zero-waste) 운동을 시작한 환경운동가 '비 존슨'(Bea Johnson)은 <br>
+            “소비자들이 기업들에게 일회용 플라스틱이 필요 없다고 요구해야한다.”라고 말합니다.
+        </p>
+        <div id="section4_inner">
+            <h1>지구를 지키는 인증샷</h1>
+            <p>
+                플라스틱 생산을 줄이길 원하는 기업의 제품을 들고 <br>
+                해시태그를 달아 인스타그램에 올려주세요.
+            </p>
+            <p class="section4_tag">
+                #플라스틱제로 #프로쓰줍러 #기업명 #플라스틱그만
+            </p>
+        </div>
+    </div>
+    <!-- section4 : e -->
+
+    <!-- section5 : s -->
+    <div id="section5_wrap">
+        <div id="section5">
+            <div class="section5_title">
+                2025년까지 플라스틱 감축 계획이 있는 기업
+            </div>
+            <p class="section5_subtitle">
+                플라스틱 문제의 심각성과 그에 따른 책임감을 깨닫고 <br>
+                플라스틱 감축 목표를  발표하고 노력하는 기업을 소개합니다.
+            </p>
+            <!-- partial:index.partial.html -->
+            <article class="wrapper">
+                <div class="marquee">
+                  <div class="marquee__group">
+                    <img src="images/do/section5_logo1.jpg" alt="logo.png">
+                    <img src="images/do/section5_logo2.jpg" alt="logo.png">
+                    <img src="images/do/section5_logo3.jpg" alt="logo.png">
+                    <img src="images/do/section5_logo4.jpg" alt="logo.png">
+                    <img src="images/do/section5_logo5.jpg" alt="logo.png">
+                    <img src="images/do/section5_logo6.jpg" alt="logo.png">
+                    <img src="images/do/section5_logo7.jpg" alt="logo.png">
+                    <img src="images/do/section5_logo8.jpg" alt="logo.png">
+                  </div>
+              
+                  <div aria-hidden="true" class="marquee__group">
+                    <img src="images/do/section5_logo9.jpg" alt="logo.png">
+                    <img src="images/do/section5_logo10.jpg" alt="logo.png">
+                    <img src="images/do/section5_logo11.jpg" alt="logo.png">
+                    <img src="images/do/section5_logo12.jpg" alt="logo.png">
+                    <img src="images/do/section5_logo13.jpg" alt="logo.png">
+                    <img src="images/do/section5_logo14.jpg" alt="logo.png">
+                    <img src="images/do/section5_logo6.jpg" alt="logo.png">
+                    <img src="images/do/section5_logo5.jpg" alt="logo.png">
+                  </div>
+                </div>
+              
+                <div class="marquee marquee--reverse">
+                  <div class="marquee__group">
+                    <img src="images/do/section5_logo8.jpg" alt="logo.png">
+                    <img src="images/do/section5_logo7.jpg" alt="logo.png">
+                    <img src="images/do/section5_logo6.jpg" alt="logo.png">
+                    <img src="images/do/section5_logo5.jpg" alt="logo.png">
+                    <img src="images/do/section5_logo4.jpg" alt="logo.png">
+                    <img src="images/do/section5_logo3.jpg" alt="logo.png">
+                    <img src="images/do/section5_logo2.jpg" alt="logo.png">
+                    <img src="images/do/section5_logo1.jpg" alt="logo.png">
+                  </div>
+              
+                  <div aria-hidden="true" class="marquee__group">
+                    <img src="images/do/section5_logo14.jpg" alt="logo.png">
+                    <img src="images/do/section5_logo13.jpg" alt="logo.png">
+                    <img src="images/do/section5_logo12.jpg" alt="logo.png">
+                    <img src="images/do/section5_logo11.jpg" alt="logo.png">
+                    <img src="images/do/section5_logo10.jpg" alt="logo.png">
+                    <img src="images/do/section5_logo9.jpg" alt="logo.png">
+                    <img src="images/do/section5_logo8.jpg" alt="logo.png">
+                    <img src="images/do/section5_logo7.jpg" alt="logo.png">
+                  </div>
+                </div>
+              </article>
+        </div>
+    </div>
+    <!-- section5 : e -->
+
+    <!-- footer : s -->
+    <div id="footer_wrap">
+        <div id="footer">
+            <div class="footer_logo">
+                <a href="index.html">
+                    <img src="images/logo_black.svg" alt="todo_logo" width="120px" height="55px">
+                </a>
+            </div>
+            <div class="footer_gnb">
+                <ul>
+                    <li><a href="javascript:return false;">개인정보처리방침</a></li>
+                    <li><a href="javascript:return false;">이용약관</a></li>
+                    <li><a href="javascript:return false;">운영정책</a></li>
+                    <li><a href="javascript:return false;">분쟁해결기준</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul class="footer_inf">
+                    <li>(주)투두대표이사: 박선혜 </li>
+                    <li>주소: 부산 해운대구 달맞이길 139 (중동)</li>
+                    <li>이메일: TODO@kakaoenterprise.com</li>
+                    <li>연락처: 1234-5678</li>
+                    <li>
+                        사업자등록번호123-45-03431
+                        <a href="javascript:return false;" class="footer_inf_a">(사업자정보 확인)</a>
+                    </li>
+                    <li>통신판매번호2020-부산해운B-0444 ©Todo Enterprise Corp.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- footer : e -->
+
+    <!-- script -->
+    <script src="js/jquery-latest.min.js"></script>
+    <script src="js/do.js"></script>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> <!-- partial_accordian -->
+    <script src='https://unpkg.co/gsap@3/dist/gsap.min.js'></script> <!-- partial_accordian -->
+</body>
+
+</html>
