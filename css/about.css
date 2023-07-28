@@ -464,6 +464,7 @@ input::-webkit-search-results-decoration {
     overflow: hidden;  
     border-top: 1px solid #ddd;  
     border-bottom: 1px solid #ddd;
+    overflow: hidden;
 }
 .loop_text{
     margin: 0 auto;
